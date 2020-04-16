@@ -1,0 +1,19 @@
+{
+  "name": "smart-brain-api",
+  "version": "1.0.0",
+  "description": "API for Smart Brain React app",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "AhmCho",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
