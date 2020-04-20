@@ -24,7 +24,7 @@ app.use(express.urlencoded({ extended: false}));
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req,res) => {
+app.get('/', (res) => {
     res.send('Hello')
 })
 
@@ -40,6 +40,10 @@ app.post('/register', (req,res) => {
 
 app.put('/image', (req,res) => {
     image.handleImage(req,res,pg);
+})
+
+app.post('/imageurl', (req,res) => {
+    image.handleApiCall(req,res)
 })
 
 app.listen(3000, () => {
